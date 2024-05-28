@@ -1,0 +1,94 @@
+﻿@model KhumaloCraft.Models.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Edit Product | KhumaloCraft</title>
+    <style>
+        body {
+            background-color: #f8f9fa; /* Change background color to light gray */
+            font-family: Arial, sans-serif; /* Change font family */
+        }
+
+        h1 {
+            color: #007bff; /* Change heading color to blue */
+            margin-bottom: 20px; /* Add space below the heading */
+        }
+
+        .row {
+            margin-top: 30px; /* Add space above the form */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Add space between form groups */
+        }
+
+        .control-label {
+            color: #555; /* Darken label text color */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Change button background color to blue */
+            border-color: #007bff; /* Change button border color to blue */
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3; /* Darken button background color on hover */
+                border-color: #0056b3; /* Darken button border color on hover */
+            }
+
+        .text-danger {
+            color: #dc3545; /* Change text color for validation messages to red */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Product</h1>
+
+        <h4>Product</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ProductId" />
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Destination" class="control-label"></label>
+                        <input asp-for="Destination" class="form-control" />
+                        <span asp-validation-for="Destination" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

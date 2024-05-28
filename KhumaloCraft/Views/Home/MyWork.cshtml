@@ -1,0 +1,192 @@
+﻿@{
+    ViewData["Title"] = "My Work";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - KhumaloCraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        .craftwork-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+            .craftwork-item img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto 15px;
+                border-radius: 5px;
+            }
+
+            .craftwork-item h3 {
+                margin: 0;
+                font-size: 1.5rem;
+                color: #333;
+                text-align: center;
+            }
+
+            .craftwork-item p {
+                font-size: 1rem;
+                color: #666;
+                text-align: justify;
+                margin-bottom: 15px;
+            }
+
+            .craftwork-item .price {
+                font-weight: bold;
+                color: green;
+                text-align: center;
+            }
+
+        .custom-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            transition: background-color 0.3s ease;
+        }
+
+            .custom-button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <h2>Explore Our Craftwork</h2>
+
+    <div class="craftwork-item">
+        <img src="/js/Images/Handcrafted Wooden Bowl.jpg" alt="Handcrafted Wooden Bowl.">
+        <h3>Handcrafted Wooden Bowl.</h3>
+        <p>A beautiful wooden bowl handcrafted from sustainable teak wood.</p>
+        <p class="price">Price: $21.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase</button>
+    </div>
+
+    <div class="craftwork-item">
+        <img src="/js/Images/My Handcrafted Wooden Bowl.jpg" alt="Undercut Wood Bowl">
+        <h3>Undercut Wood Bowl</h3>
+        <p>This stunning wood bowl was wood turned and carved from a piece of beautiful ash. The piece has a great wood grain and color. Piece complemented with rim decoration. Would make a beautiful cookie or candy bowl for your counter top or could be used as a center piece on your dining table. Also, a beautiful piece to place on your coffee table, mantle, or desk. It is ideal for personal use or as a special gift. This bowl is not microwave nor dishwasher safe. The piece was finished with oil.</p>
+        <p class="price">Price: $29.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase</button>
+    </div>
+
+    <div class="craftwork-item">
+        <img src="/js/Images/My Artisanal Ceramic Mug.jpg" alt="Large Handmade Flecked Clay Cup">
+        <h3>Large Handmade Flecked Clay Cup</h3>
+        <p>Pretty mug made from speckled clay for a matte rustic look. White matt glaze is double-dipped on the exterior to create variety in glaze thickness. The interior is satin and food safe, with an opaque grey/white glaze. Stoneware clay is high-fired, so the mug is strong.</p>
+        <p class="price">Price: $19.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase</button>
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/My Handcrafted Wooden Bowl.jpg" alt="Undercut Wood Bowl">
+        <h3>Undercut Wood Bowl</h3>
+        <p>
+            This stunning wood bowl was wood turned and carved from a piece of
+            beautiful ash.The piece has a great wood grain and color. Piece complemented
+            with rim decoration. Would make a beautiful cookie or candy bowl for your
+            counter top or could be used as a center piece on your dining table. Also
+            a beautiful piece to place on your coffee table, mantle, or desk. It is
+            ideal for personal use or as a special gift. This bowl is not microwave
+            nor dishwasher safe. The piece was finished with oil
+        </p>
+        <p class="price">Price: $29.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/My Artisanal Ceramic Mug.jpg" alt="Large Handmade Flecked Clay Cup">
+        <h3>Large Handmade Flecked Clay Cup</h3>
+        <p>
+            Pretty mug made from speckled clay for a matte rustic look. White matt glaze
+            is double-dipped on the exterior to create variety in glaze thickness. The
+            interior is satin and food safe, with an opaque grey/white glaze. Stoneware
+            clay is high-fired, so the mug is strong.
+        </p>
+        <p class="price">Price: $19.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="/js/Images/Handwoven Wool Throw.jpeg" alt="Handwoven Wool Throw">
+        <h3>Handwoven Wool Throw</h3>
+        <p>A cozy wool throw handwoven with intricate patterns by local weavers.</p>
+        <p class="price">Price: $49.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/Handcrafted Leather Bag.jpg" alt="Handcrafted Leather Bag">
+        <h3>Handcrafted Leather Bag</h3>
+        <p>A stylish leather bag meticulously crafted with attention to detail.</p>
+        <p class="price">Price: $49.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/Artisanal Wood Carving.jpg" alt="Artisanal Wood Carving">
+        <h3>Artisanal Wood Carving</h3>
+        <p>An exquisite wood carving showcasing traditional craftsmanship.</p>
+        <p class="price">Price: $69.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/Handmade Beaded Necklace.jpg" alt="Handmade Beaded Necklace">
+        <h3>Handmade Beaded Necklace</h3>
+        <p>A stunning beaded necklace handmade with vibrant colors and intricate patterns.</p>
+        <p class="price">Price: $14.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/Handwoven Cotton Scarf.jpg" alt="Handwoven Cotton Scarf">
+        <h3>Handwoven Cotton Scarf</h3>
+        <p>A soft and luxurious cotton scarf handwoven by skilled artisans.</p>
+        <p class="price">Price: $19.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="/js/Images/Handmade Pottery Set.jpeg" alt="Mccoy Pottery Canister Set">
+        <h3>Mccoy Pottery Canister Set</h3>
+        <p>A complete pottery set handmade with love.</p>
+        <p class="price">Price: $89.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+    </div>
+
+    <div class="craftwork-item">
+        <img src="~/js/Images/Hand-poured candles made with natural soy wax and essential oils.jpg" alt="Artisanal Candles">
+        <h3>Artisanal Candles</h3>
+        <p>Hand-poured candles made with natural soy wax and essential oils.</p>
+        <p class="price">Price: $9.99</p>
+        <button onclick="location.href='@Url.Action("Index", "Products")'" class="custom-button">Purchase<button />
+           
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Home Page | KhumaloCraft</title>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .text-center {
+            font-size: 3rem; /* Increase font size to 48 pixels */
+            font-style: italic; /* Change font style to italic */
+            color: #333; /* Darken the text color */
+        }
+
+        .Founder_Bio {
+            margin-top: 30px; /* Add space above the Founder Bio */
+            font-size: 1.2rem; /* Adjust font size */
+            color: #555; /* Darken the text color */
+        }
+
+        body {
+            background-color: #f8f9fa; /* Change background color to light gray */
+            font-family: Arial, sans-serif; /* Change font family */
+        }
+
+        .hero-section {
+            padding: 50px 0; /* Add padding above and below the hero section */
+            background-color: #fff; /* Change background color to white */
+        }
+
+        .hero-title {
+            color: #007bff; /* Change hero title color to blue */
+            font-size: 2.5rem; /* Increase font size */
+            margin-bottom: 20px; /* Add space below the hero title */
+        }
+
+        .hero-description {
+            font-size: 1.1rem; /* Adjust font size */
+            color: #555; /* Darken the text color */
+            margin-bottom: 30px; /* Add space below the hero description */
+        }
+
+        .featured-section {
+            background-color: #f8f9fa; /* Change background color to light gray */
+            padding: 50px 0; /* Add padding above and below the featured section */
+        }
+
+        .section-title {
+            color: #007bff; /* Change section title color to blue */
+            font-size: 2rem; /* Increase font size */
+            margin-bottom: 40px; /* Add space below the section title */
+            text-align: center; /* Center align section title */
+        }
+
+        .card {
+            border: none; /* Remove border from cards */
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+
+            .card:hover {
+                transform: translateY(-5px); /* Add hover effect */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+            }
+
+        .card-title {
+            color: #333; /* Darken the card title color */
+        }
+
+        .card-text {
+            color: #555; /* Darken the card text color */
+        }
+
+        .card-img-top {
+            border-radius: 10px; /* Add border radius to card images */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Change button background color to blue */
+            border-color: #007bff; /* Change button border color to blue */
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3; /* Darken button background color on hover */
+                border-color: #0056b3; /* Darken button border color on hover */
+            }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Khumalo Craft</h1>
+        <img src="/js/Images/HandCraft.jpeg" alt="Handcrafted Treasures" style="max-width: 100%; height: auto;">
+    </div>
+
+    <div class="container Founder_Bio">
+        <p>
+            Our founder, James Khumalo, has always had a passion for handcrafted goods
+            and a vision for creating a platform that showcases the talents of artisans
+            worldwide. With his background in entrepreneurship and e-commerce, he embarked
+            on the journey to establish KhumaloCraft Emporium as a leading destination
+            for handmade products.
+        </p>
+        <h2>Mission</h2>
+        <p>
+            At KhumaloCraft Emporium, our mission is to connect artisans from around
+            the world with a global audience. We believe in celebrating craftsmanship,
+            promoting cultural exchange, and supporting sustainable livelihoods.
+        </p>
+    </div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Discover Handcrafted Treasures</h1>
+                    <p class="hero-description">Explore our curated collection of artisanal wonders from around the world.</p>
+                    <a href="/Home/MyWork" class="btn btn-primary">Explore Now</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="~/js/Images/Handcrafted Treasures.jpg" class="img-fluid" alt="Handcrafted Treasures">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/js/Images/Handcrafted Wooden Bowl.jpg" class="card-img-top" alt="Handcrafted Wooden Bowl.">
+                        <div class="card-body">
+                            <h5 class="card-title">Handcrafted Wooden Bowl</h5>
+                            <p class="card-text">A beautiful wooden bowl handcrafted from sustainable teak wood.</p>
+                            <a href="/Home/MyWork#featured" class="btn btn-primary">$21.99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/js/Images/Artisanal Ceramic Mug.jpg" class="card-img-top" alt="Artisanal Ceramic Mug">
+                        <div class="card-body">
+                            <h5 class="card-title">Artisanal Ceramic Mug</h5>
+                            <p class="card-text">A unique ceramic mug crafted by skilled artisans using traditional techniques.</p>
+                            <a href="/Home/MyWork#featured" class="btn btn-primary">$24,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/js/Images/Handwoven Wool Throw.jpg" class="card-img-top" alt="Handwoven Wool Throw">
+                        <div class="card-body">
+                            <h5 class="card-title">Handwoven Wool Throw</h5>
+                            <p class="card-text">A cozy wool throw handwoven with intricate patterns by local weavers.</p>
+                            <a href="/Home/MyWork#featured" class="btn btn-primary">$19,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/js/Images/Handwoven Tapestry.jpg" class="card-img-top" alt="Handwoven Tapestry">
+                        <div class="card-body">
+                            <h5 class="card-title">Handwoven Tapestry</h5>
+                            <p class="card-text">Beautiful tapestry woven with intricate designs and vibrant colors.</p>
+                            <a href="/Home/MyWork#featured" class="btn btn-primary">$49,99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="~/js/Images/Hand Painted Ceramic Plates.jpg" class="card-img-top" alt="Hand-Painted Ceramic Plate Set">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand-Painted Ceramic Plate Set</h5>
+                            <p class="card-text">Embark on a journey of discovery with this unique and captivating artwork.</p>
+                            <a href="/Home/MyWork#featured" class="btn btn-primary">$149,99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>

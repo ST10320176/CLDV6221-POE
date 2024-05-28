@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - About Us | KhumaloCraft</title>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-primary {
+            color: #007bff;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        .mission-statement {
+            font-style: italic;
+            color: #555;
+        }
+
+        .founder-bio p {
+            margin-bottom: 20px;
+        }
+
+        .founder-bio h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .featured-products {
+            margin-top: 50px;
+        }
+
+            .featured-products h2 {
+                color: #007bff;
+                margin-bottom: 30px;
+            }
+
+        .craftwork-item {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+            .craftwork-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .craftwork-item img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+            .craftwork-item h3 {
+                color: #007bff;
+                margin-bottom: 10px;
+            }
+
+            .craftwork-item p {
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .craftwork-item .price {
+                font-weight: bold;
+                color: green;
+            }
+
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/js/Images/Handcrafted Treasures.jpg" class="img-fluid" alt="About Us Image">
+            </div>
+            <div class="col-md-6 founder-bio">
+                <h2>Our Story</h2>
+                <p class="lead">Embark on a journey of discovery and creativity with KhumaloCraft Emporium. Established in 2015 by visionary entrepreneur James Khumalo, our platform is dedicated to celebrating the artistry of handcrafted goods from around the world.</p>
+                <p class="mission-statement">"Crafting connections, preserving traditions, and empowering artisans."</p>
+                <h2>Mission</h2>
+                <p class="lead">At KhumaloCraft Emporium, our mission is to connect artisans from around the world with a global audience. We believe in celebrating craftsmanship, promoting cultural exchange, and supporting sustainable livelihoods.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container featured-products">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="craftwork-item">
+                    <img src="~/js/Images/Handcrafted Wooden Bowl.jpg" alt="Handcrafted Wooden Bowl">
+                    <h3>Handcrafted Wooden Bowl</h3>
+                    <p>A beautiful wooden bowl handcrafted from sustainable teak wood.</p>
+                    <p class="price">Price: $29.99</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="craftwork-item">
+                    <img src="~/js/Images/Artisanal Ceramic Mug.jpg" alt="Artisanal Ceramic Mug">
+                    <h3>Artisanal Ceramic Mug</h3>
+                    <p>A unique ceramic mug crafted by skilled artisans using traditional techniques.</p>
+                    <p class="price">Price: $19.99</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="craftwork-item">
+                    <img src="~/js/Images/Handwoven Wool Throw.jpg" alt="Handwoven Wool Throw">
+                    <h3>Handwoven Wool Throw</h3>
+                    <p>A cozy wool throw handwoven with intricate patterns by local weavers.</p>
+                    <p class="price">Price: $49.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</

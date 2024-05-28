@@ -1,0 +1,57 @@
+﻿@model IEnumerable<KhumaloCraft.Models.Order_Product>
+
+@{
+    ViewData["Title"] = "Products storage";
+}
+
+<h1>Products storage</h1>
+<h3>Checking availability</h3>
+
+
+<p>
+    <!-- <a asp-action="Create">Create New</a> -->
+    <a onclick="location.href='@Url.Action("Index", "Order1")'" class="btn btn-success">Back to Order List</a>
+    
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destination)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.availability)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.availability)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OrderProductId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OrderProductId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OrderProductId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
