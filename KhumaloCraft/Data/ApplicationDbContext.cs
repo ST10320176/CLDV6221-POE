@@ -13,7 +13,6 @@ namespace KhumaloCraft.Data
             }
 
             public DbSet<LoginUserEntity> LoginUser { get; set; }
-
         }
     
 }

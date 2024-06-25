@@ -19,6 +19,9 @@ namespace KhumaloCraft.Data
         public DbSet<KhumaloCraft.Models.Order> Order { get; set; } = default!;
         public DbSet<KhumaloCraft.Models.Order_Product> Order_Product { get; set; } = default!;
         public DbSet<KhumaloCraft.Models.Order1> Order1 { get; set; } = default!;
+
+       
+
         
     }
 }
