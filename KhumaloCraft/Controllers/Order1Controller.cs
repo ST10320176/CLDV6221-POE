@@ -19,7 +19,7 @@ namespace KhumaloCraft.Controllers
             _context = context;
         }
 
-        // GET: Order1
+        // GET: Order1// like a get function
         public async Task<IActionResult> Index()
         {
             return View(await _context.Order1.ToListAsync());
